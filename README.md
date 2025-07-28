@@ -1,4 +1,4 @@
-# petrophysics-project
+# petrophysics-project EDA
 Petrophysical analysis to derive formation tops using regression techniques
 
 # Project Overview
