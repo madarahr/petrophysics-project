@@ -96,7 +96,13 @@ The key findings:
 
 <img width="577" height="239" alt="bestRegressionModel" src="https://github.com/user-attachments/assets/007fbd4d-7181-4a0a-9324-880d8d25e19c" />
 
-<img width="640" height="480" alt="coeffDetermination" src="https://github.com/user-attachments/assets/85579ad1-ce0c-4084-b5a3-211aef95e95b" />
+<img width="572" height="616" alt="coeffDetermination" src="https://github.com/user-attachments/assets/1023a462-58bc-4176-9b16-ea7e9550043f" />
 
+
+# Next Steps
+
+The next steps are:
+- Determine the formation based on the various logs, sampling information, core analysis to create a robust petrophysical analysis
+- Apply geological structure with uncertainity as a feature
 
 
