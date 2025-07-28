@@ -1,11 +1,21 @@
-# petrophysics-project EDA
+# petrophysics-project
 Petrophysical analysis to derive formation tops using regression techniques
 
 # Project Overview
 
-This project applies petrophysical analysis techniques to predict formation tops using data from offset wells within the same hydrocarbon field. Formation tops are depth markers that indicate the boundaries between key geological formations. Accurately predicting these tops improves well placement, reduces drilling uncertainty, and enhances subsurface understanding.
+This project applies petrophysical analysis techniques to predict depths of formation (rock) tops in the subsurface using data from offset hydrocarbon Wells within the same hydrocarbon field. Formation tops are depth markers that indicate the boundaries between key geological formations. Accurately predicting these tops improves well placement, reduces drilling uncertainty, and enhances subsurface understanding.
 
-By using well log responses (e.g., gamma ray, resistivity, density, neutron porosity), the project identifies patterns near known formation tops and builds regression models to estimate the top depths in wells where full interpretation may not yet be available.
+The data is from an Oil & Gas field that belongs to a large company. This data is used for training purposes only and it is hence shared with many other companies.
+
+The original intent was to use Well log responses (e.g., gamma ray, resistivity, density, neutron porosity) from offset Wells and identify patterns to predict formation tops and their depths using regression models and apply it to drill a new Well.  Despite having multiple log types, there are some rocks require more analysis to idenity them and this data is limited.  However, the offset Wells have an established analysis of their subsurface rock formations and have associated depths established.  This data from all the Wells was used to predict the formation top depths at a different location in the same field.
+
+<img width="1118" height="600" alt="wellplotGlobal" src="https://github.com/user-attachments/assets/e8c2b984-5721-4bcd-93ea-b68fd1a9b072" />
+
+<img width="1118" height="600" alt="wellPlotLocal" src="https://github.com/user-attachments/assets/48e90e3c-256e-4e7a-ae5e-0ebee1903e25" />
+
+<img width="1218" height="650" alt="wellPlotField" src="https://github.com/user-attachments/assets/eeebc862-e1ad-41f2-93eb-0addaea496da" />
+
+
 
 # Objectives
 
@@ -16,6 +26,8 @@ By using well log responses (e.g., gamma ray, resistivity, density, neutron poro
 - Train regression models to predict the depth of formation tops in new wells.
 
 - Visualize predictions and assess model performance.
+
+- Test the best performing model against a New Well location
 
 - Provide an interpretable, reproducible workflow for subsurface teams.
 
@@ -36,6 +48,7 @@ By using well log responses (e.g., gamma ray, resistivity, density, neutron poro
 
 - pandas, numpy – data handling
 - matplotlib, seaborn – visualization
+- plotly - map visualization
 - scikit-learn – regression modeling
 - lasio – reading LAS files
 
@@ -43,7 +56,7 @@ By using well log responses (e.g., gamma ray, resistivity, density, neutron poro
 
 - Data Cleaning (handling missing values, data types)
 - Plotting of well curves
-- Examination of mnemonics and the location in the .las files
+- Examination of mnemonics and the location inside the .las files
 
 # Why Regression Was Used:
 
@@ -63,21 +76,26 @@ This project uses regression tools because the target variable is continuous rat
 # Well Log Information
 <img width="642" height="491" alt="image" src="https://github.com/user-attachments/assets/f0fc6793-f56a-4b54-a723-303753889f9d" />
 
+
 # Project Structure
-- petrophysics- project/petrophysics.ipynb
+- petrophysics-project/petrophysics.ipynb # EDA to explore the data and initial selection of the regression model 
+- petrophysics-project/formationDepth_prediction.ipynb # selection of ideal regression model and applying it to test
 - data/		# Raw and cleaned datasets
-- notebooks/	# Jupyter notebooks for EDA and modeling
+- notebooks/	# Jupyter notebooks for EDA and for final model use in prediction
 - images/	# Saved plots and visualizations
-- README.md              # Project documentation
+- output/ # .csv files
+- README.md  # Project documentation
 
-# Conclusion & Next Steps
+# Conclusion
 
-The key findings from the EDA are:
-- The signature of the well logs are similar to each other which helps to apply ML
+The key findings:
+- The signature of the well logs are similar to each other which helps to apply ML however, it was easier to derive formation top depths from offset Well analysis where the formation top depths were established.
 - The log data is limited and upon examining, it is not clear that the formation tops can be derived directly from the log signatures.  Hence the offset data and the formation top depths were used directly instead without interpreting the log signature.  More data from sampling, cores are necessary to develop a formation top prediction from the log signatures and other data.
-- Some wells have the location coordinates embedded in the ‘params’ section rather than the ‘wells’ section of the .las file
-- Some formation top names are in CAPS and need to be converted for consistency
-- The key features identified are Easting, Northing, Depth and the Formation Top.
-- Baseline regression models have been built and tested with Linear Regression, KNeighbors Regressor, Decision Tree Regressor, SVR, Ridge and Random Forest Regressor.
-- Next steps include model refinement, expansion of features to inter-distance between each well, and potentially applying more advanced regression techniques.
+- The key features used are cartesian grid location of the Wells in the form or Easting, Northing, Depth, inter-distance between each Well in the field and the Formation Top name.
+- Linear Regression, KNeighbors Regressor, Decision Tree Regressor, SVR, Ridge and Random Forest Regressor were tested and the best performing model were LinearRegression and RandomForestRegression with a high R2-Squared score (0.997424 and 0.997325).
+
+<img width="577" height="239" alt="bestRegressionModel" src="https://github.com/user-attachments/assets/007fbd4d-7181-4a0a-9324-880d8d25e19c" />
+
+<img width="3840" height="2880" alt="coeffDetermination" src="https://github.com/user-attachments/assets/4b1d3f51-b1ef-4988-a229-85355d93595d" />
+
 
