@@ -1,0 +1,19 @@
+~TOPS_DATA | TOPS_DEFINITION
+        5.6000,Doyles Creek Subgroup   
+      427.1711,Horseshoe Creek Subgroup
+      490.4921,Apple Tree Flat Subgroup
+      737.0000,Watts Sandstone         
+      746.0000,Denman Fm               
+      867.1244,Mt Leonard Fm           
+      996.0000,Althorpe Fm             
+     1003.0000,Malabar Fm              
+     1049.2716,Mt Ogilvie Fm           
+     1098.2854,Milbrodale Fm           
+     1154.9063,Mt Thorley Fm           
+     1205.0000,Burnamwood Fm           
+     1292.5000,Archerfield Sandstone   
+     1322.5000,Mulbring Siltstone      
+     1398.5875,Muree Sandstone         
+     1506.0000,Branxton Fm             
+     1546.0000,Greta Coal Measures     
+     1569.7129,Dalwood Group

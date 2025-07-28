@@ -1,4 +1,4 @@
-~Version
+65~Version
 VERS  .             3.0                                 : CWLS LOG ASCII STANDARD - VERSION 3.0
 WRAP  .             NO                                  : One line per depth step
 DLM   .             COMMA                               : Delimiter character between data columns
