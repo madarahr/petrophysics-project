@@ -96,6 +96,7 @@ The key findings:
 
 <img width="577" height="239" alt="bestRegressionModel" src="https://github.com/user-attachments/assets/007fbd4d-7181-4a0a-9324-880d8d25e19c" />
 
-<img width="3840" height="2880" alt="coeffDetermination" src="https://github.com/user-attachments/assets/4b1d3f51-b1ef-4988-a229-85355d93595d" />
+<img width="640" height="480" alt="coeffDetermination" src="https://github.com/user-attachments/assets/85579ad1-ce0c-4084-b5a3-211aef95e95b" />
+
 
 
