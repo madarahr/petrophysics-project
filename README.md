@@ -64,7 +64,7 @@ This project uses regression tools because the target variable is continuous rat
 <img width="642" height="491" alt="image" src="https://github.com/user-attachments/assets/f0fc6793-f56a-4b54-a723-303753889f9d" />
 
 # Project Structure
-- petrophysics- project/
+- petrophysics- project/petrophysics.ipynb
 - data/		# Raw and cleaned datasets
 - notebooks/	# Jupyter notebooks for EDA and modeling
 - images/	# Saved plots and visualizations
