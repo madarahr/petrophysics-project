@@ -78,7 +78,7 @@ This project uses regression tools because the target variable is continuous rat
 
 
 # Project Structure
-- petrophysics-project/petrophysics.ipynb # EDA to explore the data and initial selection of the regression model 
+- petrophysics-project/petrophysics.ipynb (https://github.com/madarahr/petrophysics-project/blob/main/petrophysics.ipynb) # EDA to explore the data and initial selection of the regression model 
 - petrophysics-project/formationDepth_prediction.ipynb (https://github.com/madarahr/petrophysics-project/blob/main/formationDepth_prediction.ipynb) # selection of ideal regression model and applying it to test
 - data/		# Raw and cleaned datasets
 - notebooks/	# Jupyter notebooks for EDA (petrophysics.ipynb) and for final model (formationDepth_prediction.ipynb) use in prediction
