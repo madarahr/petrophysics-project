@@ -102,7 +102,8 @@ The key findings:
 # Next Steps
 
 The next steps are:
-- Determine the formation based on the various logs, sampling information, core analysis to create a robust petrophysical analysis
-- Apply geological structure with uncertainity as a feature
+- Determine the formation based on the various logs, sampling information, core analysis instead of formation tops and depths of offset Wells.
+- Apply geological structure with uncertainity as a feature.  This can make the model more robust based on the dip angle of each subsurface layer, subsurface faults and other anamolies.
+- Application of image recognition of the various logs to develop formation top information.
 
 
